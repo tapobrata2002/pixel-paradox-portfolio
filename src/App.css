@@ -42,11 +42,9 @@ html {
 
   font-family: var(--font-main);
 
-  /* Prevent automatic font resizing on mobile */
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 
-  /* Prevent browsers from inventing missing font weights */
   font-synthesis: none;
 }
 
@@ -109,7 +107,9 @@ img {
 .portfolio {
   width: 100%;
   min-height: 100vh;
-  overflow: hidden;
+
+  /* Removed overflow: hidden to allow sticky navbar */
+
   background: var(--background);
   color: var(--text-main);
 }
@@ -144,7 +144,7 @@ img {
 
 
 /* ==========================================
-   05. NAVIGATION
+   05. NAVIGATION — STICKY NAVBAR
 ========================================== */
 
 .navbar {
@@ -157,8 +157,10 @@ img {
   justify-content: space-between;
   gap: 30px;
 
-  position: relative;
-  z-index: 100;
+  /* Sticky navbar */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 
   background: rgba(28, 28, 28, 0.96);
   border-bottom: 1px solid var(--border);
