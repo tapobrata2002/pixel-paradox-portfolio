@@ -1,5 +1,4 @@
 
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 import {
@@ -9,6 +8,8 @@ import {
   Scissors,
   Camera,
   Sparkles,
+  ArrowUpRight,
+  ArrowLeft,
 } from 'lucide-react';
 
 // ==========================================
@@ -16,7 +17,6 @@ import {
 // ==========================================
 
 function ExpertisePage() {
-
   // CREATIVE SERVICES
 
   const services = [
@@ -89,9 +89,7 @@ function ExpertisePage() {
 
   return (
     <section className="expertise-section">
-
       <div className="container section">
-
         {/* PAGE INTRODUCTION */}
 
         <div className="section-heading">
@@ -127,7 +125,9 @@ function ExpertisePage() {
 
               <p>{service.description}</p>
 
-              <span className="card-arrow">↗</span>
+              <span className="card-arrow">
+                <ArrowUpRight size={20} strokeWidth={1.8} />
+              </span>
             </article>
           ))}
         </div>
@@ -135,7 +135,6 @@ function ExpertisePage() {
         {/* CREATIVE TOOLKIT */}
 
         <div className="toolkit-section">
-
           <div className="toolkit-heading">
             <div>
               <p className="eyebrow">
@@ -178,7 +177,9 @@ function ExpertisePage() {
                     <p>{tool.category}</p>
                   </div>
 
-                  <span className="tool-arrow">↗</span>
+                  <span className="tool-arrow">
+                    <ArrowUpRight size={20} strokeWidth={1.8} />
+                  </span>
                 </article>
               );
             })}
@@ -189,10 +190,10 @@ function ExpertisePage() {
 
         <div className="expertise-back">
           <Link to="/#home" className="text-link">
-            ← Back to Home
+            <ArrowLeft size={18} strokeWidth={1.8} />
+            Back to Home
           </Link>
         </div>
-
       </div>
     </section>
   );

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { useParams, Link } from 'react-router-dom';
 import projects from '../data/projects';
 
@@ -58,7 +58,33 @@ const categories = {
 };
 
 // ==========================================
-// 02. YOUTUBE VIDEO ID EXTRACTOR
+// 02. SVG ICON
+// ==========================================
+
+function ArrowLeftIcon() {
+  return (
+    <svg
+      className="icon-arrow-left"
+      xmlns="http://www.w3.org/2000/svg"
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path d="M19 12H5" />
+      <path d="M12 19l-7-7 7-7" />
+    </svg>
+  );
+}
+
+// ==========================================
+// 03. YOUTUBE VIDEO ID EXTRACTOR
 // ==========================================
 
 function getYouTubeVideoId(url) {
@@ -84,7 +110,7 @@ function getYouTubeVideoId(url) {
 }
 
 // ==========================================
-// 03. CATEGORY PAGE
+// 04. CATEGORY PAGE
 // ==========================================
 
 function CategoryPage() {
@@ -99,7 +125,8 @@ function CategoryPage() {
         <h1>Category not found.</h1>
 
         <Link to="/" className="back-link">
-          ← Back to Home
+          <ArrowLeftIcon />
+          Back to Home
         </Link>
       </main>
     );
@@ -112,10 +139,10 @@ function CategoryPage() {
 
   return (
     <main className="category-page container">
-
       {/* BACK NAVIGATION */}
       <Link to="/" className="back-link">
-        ← Back to Home
+        <ArrowLeftIcon />
+        Back to Home
       </Link>
 
       {/* CATEGORY HEADER */}
@@ -172,9 +199,7 @@ function CategoryPage() {
             );
           })
         ) : (
-          <p className="empty-projects">
-            Projects coming soon.
-          </p>
+          <p className="empty-projects">Projects coming soon.</p>
         )}
       </div>
     </main>

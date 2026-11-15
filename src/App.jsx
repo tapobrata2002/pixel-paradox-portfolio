@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import './App.css';
 
 import {
@@ -11,6 +11,106 @@ import {
 
 import CategoryPage from './pages/CategoryPage';
 import ExpertisePage from './pages/ExpertisePage';
+
+// ==========================================
+// SVG ICONS — CROSS-PLATFORM RENDERING
+// ==========================================
+
+function ArrowUpRightIcon() {
+  return (
+    <svg
+      width="1em"
+      height="1em"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      focusable="false"
+      style={{
+        display: 'inline-block',
+        verticalAlign: '-0.12em',
+        flexShrink: 0,
+      }}
+    >
+      <path d="M7 17 17 7" />
+      <path d="M7 7h10v10" />
+    </svg>
+  );
+}
+
+function ArrowDownIcon() {
+  return (
+    <svg
+      width="1em"
+      height="1em"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      focusable="false"
+      style={{
+        display: 'inline-block',
+        verticalAlign: '-0.12em',
+        flexShrink: 0,
+      }}
+    >
+      <path d="M12 5v14" />
+      <path d="m19 12-7 7-7-7" />
+    </svg>
+  );
+}
+
+function SparkleIcon() {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.6"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path d="M12 2v20" />
+      <path d="M2 12h20" />
+      <path d="m4.93 4.93 14.14 14.14" />
+      <path d="M19.07 4.93 4.93 19.07" />
+    </svg>
+  );
+}
+
+function CrossIcon() {
+  return (
+    <svg
+      width="0.75em"
+      height="0.75em"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      aria-hidden="true"
+      focusable="false"
+      style={{
+        display: 'inline-block',
+        verticalAlign: '0.05em',
+        flexShrink: 0,
+      }}
+    >
+      <path d="m5 5 14 14" />
+      <path d="M19 5 5 19" />
+    </svg>
+  );
+}
 
 // ==========================================
 // SOCIAL MEDIA LINKS
@@ -77,7 +177,7 @@ function Navbar() {
 
       <div className="nav-actions">
         <Link to="/#contact" className="nav-cta">
-          Let's Talk ↗
+          Let's Talk <ArrowUpRightIcon />
         </Link>
       </div>
     </header>
@@ -113,11 +213,11 @@ function Hero() {
 
         <div className="hero-buttons">
           <Link to="/#works" className="btn-primary">
-            Explore My Work ↗
+            Explore My Work <ArrowUpRightIcon />
           </Link>
 
           <Link to="/#about" className="btn-secondary">
-            Discover More ↓
+            Discover More <ArrowDownIcon />
           </Link>
         </div>
       </div>
@@ -141,7 +241,9 @@ function Hero() {
         </div>
 
         <div className="visual-footer">
-          <span>FRAMES × MOTION × STORIES</span>
+          <span>
+            FRAMES <CrossIcon /> MOTION <CrossIcon /> STORIES
+          </span>
           <span>01 — 04</span>
         </div>
       </div>
@@ -158,12 +260,10 @@ function DisciplineStrip() {
     <section className="discipline-strip">
       <div className="container discipline-content">
         <span>VIDEO EDITING</span>
-        <span>✳</span>
+        <SparkleIcon />
         <span>MOTION GRAPHICS</span>
-        <span>✳</span>
+        <SparkleIcon />
         <span>FILMMAKING</span>
-        {/* <span>✳</span> */}
-        {/* <span>VISUAL STORYTELLING</span> */}
       </div>
     </section>
   );
@@ -190,7 +290,7 @@ function SelectedWorks() {
     {
       number: '03',
       title: 'Talking Head & Creator Content',
-      description: 'Engaging edits crafted for creators and digital storytellers.',
+      description: 'Engaging edits crafted for UGC creators.',
       slug: 'talking-head-creator-content',
     },
     {
@@ -207,12 +307,6 @@ function SelectedWorks() {
     },
     {
       number: '06',
-      title: 'Short-Form Reels & Shorts (9:16)',
-      description: 'Fast-paced vertical content designed to capture attention.',
-      slug: 'short-form-reels-shorts',
-    },
-    {
-      number: '07',
       title: 'Commercial & Brand Promos',
       description: 'Creative promotional content that brings brands to life.',
       slug: 'commercial-brand-promos',
@@ -255,7 +349,9 @@ function SelectedWorks() {
               <p>{category.description}</p>
             </div>
 
-            <span className="category-arrow">↗</span>
+            <span className="category-arrow">
+              <ArrowUpRightIcon />
+            </span>
           </Link>
         ))}
       </div>
@@ -294,7 +390,7 @@ function About() {
         </p>
 
         <Link to="/#contact" className="text-link">
-          More About Me ↗
+          More About Me <ArrowUpRightIcon />
         </Link>
       </div>
     </section>
@@ -345,7 +441,9 @@ function SocialMediaSection() {
                 />
               </span>
 
-              <span className="social-arrow">↗</span>
+              <span className="social-arrow">
+                <ArrowUpRightIcon />
+              </span>
             </div>
 
             <div className="social-card-content">
@@ -390,7 +488,7 @@ function Contact() {
           href="mailto:pixel.paradox.creatives@gmail.com"
           className="btn-primary"
         >
-          Get In Touch ↗
+          Get In Touch <ArrowUpRightIcon />
         </a>
 
         <div className="contact-email-wrapper">
