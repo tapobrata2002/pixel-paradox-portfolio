@@ -153,7 +153,7 @@ const projects = [
     id: 18,
     title: 'Travel Vlog Project #04',
     category: 'Travel & Destination Vlogs',
-    videoLink: 'https://youtube.com/shorts/BKbQbNa5kPU',
+    videoLink: 'https://youtube.com/shorts/aXOEgurMR9o',
     aspectRatio: '9 / 16',
     description: '',
   },
