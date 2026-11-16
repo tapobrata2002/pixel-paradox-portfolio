@@ -8,9 +8,9 @@ Where frames find meaning, motion creates emotion, and stories come to life.
 
 Built with React and powered by Vite, the portfolio combines modern frontend development with a distinctive creative identity.
 
-🌐 **Live Website:** [https://pixel-paradox-portfolio.vercel.app/](https://pixel-paradox-portfolio.vercel.app/)
+🌐 **Live Website:** [Visit Pixel Paradox](https://pixel-paradox-portfolio.vercel.app/)
 
-📂 **GitHub Repository:** [https://github.com/tapobrata2002/pixel-paradox-portfolio](https://github.com/tapobrata2002/pixel-paradox-portfolio)
+📂 **GitHub Repository:** [View Source Code](https://github.com/tapobrata2002/pixel-paradox-portfolio)
 
 ---
 
@@ -21,26 +21,26 @@ Built with React and powered by Vite, the portfolio combines modern frontend dev
 - ✨ **Motion Graphics Showcase** — A dedicated space to explore motion graphics and animation work.
 - 🎥 **Filmmaking Portfolio** — Showcases creative filmmaking and visual storytelling projects.
 - 📂 **Dynamic Project Organization** — Project information is maintained in a centralized data structure.
-- 🔀 **Category-Based Navigation** — Navigate between different creative disciplines using React Router.
+- 🔀 **Category-Based Navigation** — Navigate between different portfolio categories using React Router.
 - 📱 **Responsive Interface** — Designed to provide an accessible browsing experience across different screen sizes.
-- ⚡ **Fast Performance** — Powered by Vite for a fast development experience and optimized production builds.
+- ⚡ **Fast Performance** — Powered by Vite for a fast development experience and production builds.
 - 🧩 **Reusable Components** — Structured React components for maintainable and scalable development.
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Technology         | Purpose                           |
-| ------------------ | --------------------------------- |
-| React 19           | Frontend UI development           |
-| Vite 8             | Development server and build tool |
-| JavaScript (ES6+)  | Application logic                 |
-| React Router DOM 7 | Client-side routing               |
-| Lucide React       | Icon library                      |
-| React Icons        | Additional icon resources         |
-| CSS                | Styling and responsive layouts    |
-| ESLint             | Code quality and linting          |
-| Vercel             | Deployment and hosting            |
+| Technology | Purpose |
+|---|---|
+| React 19 | Frontend UI development |
+| Vite 8 | Development server and build tool |
+| JavaScript (ES6+) | Application logic |
+| React Router DOM 7 | Client-side routing |
+| Lucide React | Icon library |
+| React Icons | Additional icon resources |
+| CSS | Styling and responsive layouts |
+| ESLint | Code quality and linting |
+| Vercel | Deployment and hosting |
 
 ---
 
@@ -167,7 +167,7 @@ npm run lint
 
 The project is deployed using **Vercel**.
 
-The live application can be accessed here:
+Visit the live application:
 
 🔗 [https://pixel-paradox-portfolio.vercel.app/](https://pixel-paradox-portfolio.vercel.app/)
 
@@ -200,9 +200,13 @@ If you find something worth improving, feel free to open an issue or submit a pu
 
 Frontend Developer | Creative Professional
 
-- GitHub: [https://github.com/tapobrata2002](https://github.com/tapobrata2002)
+- GitHub: [tapobrata2002](https://github.com/tapobrata2002)
 - Creative Brand: Pixel Paradox
 
 ---
 
-\<p align="center">   \<strong>PIXEL PARADOX\</strong>   \<br/>   Frames. Motion. Stories.   \<br/>\<br/>   Made with ❤️ and creativity. \</p>
+<p align="center">
+  <strong>PIXEL PARADOX</strong>
+  <br/>
+  Frames. Motion. Stories.
+</p>
